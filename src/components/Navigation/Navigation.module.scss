@@ -1,9 +1,12 @@
+@import '../../styles/colors';
 .headerWrapper {
+  position: sticky;
+  top: 0;
+  background-color: $white-color;
   .navWrapper {
-    position: sticky;
-    top: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .logoWrapper {
       display: flex;
       svg {
@@ -21,6 +24,9 @@
         text-transform: capitalize;
       }
     }
+  }
+  .headerBtnContainer{
+    display: flex;
   }
 }
 

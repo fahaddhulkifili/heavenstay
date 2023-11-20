@@ -2,6 +2,7 @@ import React from "react";
 import HeavenStayLogo from "../../resources/icons/HeavenStayLogo";
 import * as styles from "./Navigation.module.scss";
 import Container from "../UI/Container/Container";
+import Button from "../UI/Button/Button";
 
 const Navigation = ({ activeSection, sections }) => {
   const activeStyle = {
@@ -33,6 +34,10 @@ const Navigation = ({ activeSection, sections }) => {
               </li>
             ))}
           </ul>
+          <div className={styles.headerBtnContainer}>
+            <Button>Enquiry</Button>
+            <Button>Book Now</Button>
+          </div>
         </nav>
       </Container>
     </div>

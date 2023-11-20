@@ -1,4 +1,3 @@
-// Menu.js
 import React, { useState, useEffect, useRef } from "react";
 import Navigation from "../components/Navigation/Navigation";
 import Section from "../components/Sections/Sections";
