@@ -5,6 +5,7 @@ import HeroBanner from "../components/HeroSection/HeroBanner";
 import About from "../components/AboutSection/About";
 import Testimonial from "../components/TestimonialSection/Testimonial";
 import Booking from "../components/BookingSection/Booking";
+import "../styles/index.scss";
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState("section1");
