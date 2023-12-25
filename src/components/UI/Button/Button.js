@@ -2,7 +2,13 @@ import React from "react";
 import * as styles from "./Button.module.scss";
 
 const Button = (props) => {
-  return <a className={styles.btnWrapper}>{props.children}</a>;
+  let buttonClass = `${styles.btnWrapper}`;
+  if (props.type === "secondary") {
+    buttonClass += ` ${styles.secondaryBtn}`;
+  } else if (props.type === "primary") {
+    buttonClass += ` ${styles.primaryBtn}`;
+  }
+  return <a className={buttonClass}>{props.children}</a>;
 };
 
 export default Button;

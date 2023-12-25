@@ -5,6 +5,7 @@ import HeroBanner from "../components/HeroSection/HeroBanner";
 import About from "../components/AboutSection/About";
 import Testimonial from "../components/TestimonialSection/Testimonial";
 import Booking from "../components/BookingSection/Booking";
+import Footer from "../components/Footer/Footer";
 import "../styles/index.scss";
 
 const HomePage = () => {
@@ -62,6 +63,7 @@ const HomePage = () => {
           </Section>
         ))}
       </div>
+      <Footer />
     </>
   );
 };

@@ -7,8 +7,7 @@ import Button from "../UI/Button/Button";
 const Navigation = ({ activeSection, sections }) => {
   const activeStyle = {
     fontWeight: "bold",
-    color: "red",
-    textDecoration: "underline",
+    color: "#4369B2",
   };
 
   return (
@@ -35,8 +34,8 @@ const Navigation = ({ activeSection, sections }) => {
             ))}
           </ul>
           <div className={styles.headerBtnContainer}>
-            <Button>Enquiry</Button>
-            <Button>Book Now</Button>
+            <Button type={"primary"}>Enquiry</Button>
+            <Button type={"secondary"}>Book Now</Button>
           </div>
         </nav>
       </Container>
