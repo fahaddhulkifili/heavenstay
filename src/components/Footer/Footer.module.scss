@@ -1,0 +1,137 @@
+@import "../../styles/colors";
+
+.footer {
+  background-color: $theme-primary-light;
+  padding: 60px 0px;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    gap: 30px;
+  }
+  &__logo {
+    svg {
+      width: 160px;
+      height: 50px;
+    }
+  }
+  &__left {
+  }
+  &__right {
+    span {
+      font-size: 24px;
+      font-family: "Poppins";
+      font-weight: 500;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        color: $theme-secondary;
+        font-size: 16px;
+        font-family: "Poppins";
+        position: relative;
+        padding-left: 45px;
+        &:not(:last-of-type) {
+          margin-bottom: 24px;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 0;
+          background-repeat: no-repeat;
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .address {
+        &::after {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAxOCAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMC41QzQuMTY4NzUgMC41IDAuMjUgNC40MTg3NSAwLjI1IDkuMjVDMC4yNSAxNS44MTI1IDkgMjUuNSA5IDI1LjVDOSAyNS41IDE3Ljc1IDE1LjgxMjUgMTcuNzUgOS4yNUMxNy43NSA0LjQxODc1IDEzLjgzMTMgMC41IDkgMC41Wk05IDEyLjM3NUM3LjI3NSAxMi4zNzUgNS44NzUgMTAuOTc1IDUuODc1IDkuMjVDNS44NzUgNy41MjUgNy4yNzUgNi4xMjUgOSA2LjEyNUMxMC43MjUgNi4xMjUgMTIuMTI1IDcuNTI1IDEyLjEyNSA5LjI1QzEyLjEyNSAxMC45NzUgMTAuNzI1IDEyLjM3NSA5IDEyLjM3NVoiIGZpbGw9IiMzMTMxMzEiLz4KPC9zdmc+Cg==);
+        }
+      }
+      .contact {
+        &::after {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjE0NDggMTIuODQ4NEwxMy42MzA3IDEzLjcwMTRDMTMuNDQ5IDEzLjgwMzcgMTMuMjM4OCAxMy44NDM3IDEzLjAzMjIgMTMuODE1M0MxMi44MjU2IDEzLjc4NyAxMi42MzM5IDEzLjY5MTggMTIuNDg2NSAxMy41NDQzTDcuNDMyNzcgOC40OTA1QzcuMjg1MzggOC4zNDMwMiA3LjE5MDI1IDguMTUxNCA3LjE2MTg4IDcuOTQ0ODRDNy4xMzM1MSA3LjczODI4IDcuMTczNDYgNy41MjgxMSA3LjI3NTYzIDcuMzQ2MzZMOC4xMjg2NyA1LjgzMjE4QzguMjgyMjIgNS41NTk2NyA4LjM0MjMzIDUuMjQ0MzcgOC4yOTk4NCA0LjkzNDQ3QzguMjU3MzQgNC42MjQ1NyA4LjExNDU2IDQuMzM3MSA3Ljg5MzMyIDQuMTE1OThMNS42MjM4NyAxLjg0NjUzQzUuNDkwODYgMS43MTM0NSA1LjMzMjkzIDEuNjA3ODggNS4xNTkxIDEuNTM1ODZDNC45ODUyOCAxLjQ2MzgzIDQuNzk4OTYgMS40MjY3NiA0LjYxMDgxIDEuNDI2NzZDNC40MjI2NSAxLjQyNjc2IDQuMjM2MzMgMS40NjM4MyA0LjA2MjUxIDEuNTM1ODZDMy44ODg2OCAxLjYwNzg4IDMuNzMwNzUgMS43MTM0NSAzLjU5Nzc0IDEuODQ2NTNMMi41NjcyOSAyLjg3NjI1QzEuOTY0NzEgMy40Nzg4MiAxLjU4MDg4IDQuMjY1NTQgMS40NzY4MyA1LjExMTMyQzEuMzcyNzggNS45NTcxMSAxLjU1NDQ5IDYuODEzNCAxLjk5MzA1IDcuNTQ0MDVMMi41MTAwOCA4LjQwNTc3QzUuMTUwNDYgMTIuODA2MyA4Ljg3NzI4IDE2LjQ1NDYgMTMuMzMzIDE5LjAwMDZMMTMuNDM1MiAxOS4wNTkzQzE0Ljk1NzMgMTkuOTI5IDE2LjgzNzkgMTkuNjc1NSAxOC4wNTY2IDE4LjQ1NzVMMTkuMTMyNyAxNy4zODE1QzE5LjI2NTcgMTcuMjQ4NCAxOS4zNzEzIDE3LjA5MDUgMTkuNDQzMyAxNi45MTY3QzE5LjUxNTQgMTYuNzQyOSAxOS41NTI0IDE2LjU1NjUgMTkuNTUyNCAxNi4zNjg0QzE5LjU1MjQgMTYuMTgwMiAxOS41MTU0IDE1Ljk5MzkgMTkuNDQzMyAxNS44MjAxQzE5LjM3MTMgMTUuNjQ2MyAxOS4yNjU3IDE1LjQ4ODMgMTkuMTMyNyAxNS4zNTUzTDE2Ljg2MTggMTMuMDg0NEMxNi42NDA3IDEyLjg2MjkgMTYuMzUzMSAxMi43MTk5IDE2LjA0MzEgMTIuNjc3M0MxNS43MzMgMTIuNjM0NiAxNS40MTc1IDEyLjY5NDcgMTUuMTQ0OCAxMi44NDg0WiIgZmlsbD0iIzMxMzEzMSIvPgo8L3N2Zz4K);
+        }
+      }
+      .mail {
+        &::after {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjM3NDIgMy42MDkzOEgzLjYyNTc4QzIuODM4NDggMy42MTAyNCAyLjA4MzY3IDMuOTIzMzggMS41MjY5NiA0LjQ4MDA5QzAuOTcwMjU4IDUuMDM2OCAwLjY1NzExOSA1Ljc5MTYgMC42NTYyNSA2LjU3ODkxVjE0LjQyMTFDMC42NTcxMTkgMTUuMjA4NCAwLjk3MDI1OCAxNS45NjMyIDEuNTI2OTYgMTYuNTE5OUMyLjA4MzY3IDE3LjA3NjYgMi44Mzg0OCAxNy4zODk4IDMuNjI1NzggMTcuMzkwNkgxNy4zNzQyQzE4LjE2MTUgMTcuMzg5OCAxOC45MTYzIDE3LjA3NjYgMTkuNDczIDE2LjUxOTlDMjAuMDI5NyAxNS45NjMyIDIwLjM0MjkgMTUuMjA4NCAyMC4zNDM4IDE0LjQyMTFWNi41Nzg5MUMyMC4zNDI5IDUuNzkxNiAyMC4wMjk3IDUuMDM2OCAxOS40NzMgNC40ODAwOUMxOC45MTYzIDMuOTIzMzggMTguMTYxNSAzLjYxMDI0IDE3LjM3NDIgMy42MDkzOFpNMTguODY3MiAxNi4xODY0TDEyLjQzMjcgMTAuNjgzOEMxMS44OTgzIDExLjE0OTggMTEuMjEzNSAxMS40MDcgMTAuNTA0NSAxMS40MDgyQzkuNzk1NDggMTEuNDA5NSA5LjEwOTg3IDExLjE1NDUgOC41NzM5MSAxMC42OTAzTDIuMjU0MjIgMTYuMjc4M0MyLjA3NDM2IDE2LjE0OTggMS45MTU5OSAxNS45OTM3IDEuNzg1IDE1LjgxNTZMOC4wNjg1OSAxMC4yNjM4TDEuOTA2NDEgNS4wMzY3MkMyLjA1MjkyIDQuODY3ODcgMi4yMjU3OCA0LjcyMzgyIDIuNDE4MjggNC42MTAxNkw5LjAxNjg4IDEwLjIwNDdDOS40MzA1OSAxMC41NTczIDkuOTU2NCAxMC43NTEgMTAuNSAxMC43NTFDMTEuMDQzNiAxMC43NTEgMTEuNTY5NCAxMC41NTczIDExLjk4MzEgMTAuMjA0N0wxOC41ODE3IDQuNjEwMTZDMTguNzc0MiA0LjcyMzgyIDE4Ljk0NzEgNC44Njc4NyAxOS4wOTM2IDUuMDM2NzJMMTIuOTM4IDEwLjI1MzlMMTkuMzAzNiAxNS42OTQyQzE5LjE4MzMgMTUuODc5IDE5LjAzNjIgMTYuMDQ0OSAxOC44NjcyIDE2LjE4NjRaIiBmaWxsPSIjMzEzMTMxIi8+Cjwvc3ZnPgo=);
+        }
+      }
+    }
+  }
+  &__center {
+    span {
+      font-size: 20px;
+      font-family: "Poppins";
+      font-weight: 500;
+      display: block;
+      margin-bottom: 25px !important;
+    }
+  }
+  &__map {
+    position: relative;
+    img {
+      border-radius: 25px;
+    }
+    &_btn {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0 0 0 / 10%);
+      border-radius: 25px;
+    }
+  }
+  &__navs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__links {
+    ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+          color: $theme-secondary;
+          font-size: 16px;
+          font-family: "Poppins";
+          &:hover {
+            color: $theme-primary;
+          }
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+  &__social_links {
+    span {
+      font-size: 24px;
+      font-family: "Poppins";
+      font-weight: 500;
+    }
+    ul {
+      padding-left: 0;
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+          color: $theme-secondary;
+          font-size: 16px;
+          font-family: "Poppins";
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

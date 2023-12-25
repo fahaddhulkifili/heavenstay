@@ -1,0 +1,60 @@
+@import "../../styles/colors";
+.about {
+  margin: 110px 0px;
+  &__container {
+    display: grid;
+    row-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 50px;
+    &-item {
+      margin: 27px 0px;
+      span {
+        max-width: 80%;
+        display: block;
+        font-size: 18px;
+        font-family: "Poppins";
+        font-weight: 300;
+        color: $theme-secondary;
+      }
+      p {
+        font-size: 24px;
+        font-family: "Poppins";
+        font-weight: 500;
+        color: $theme-secondary;
+        margin: 8px 0px;
+      }
+    }
+  }
+}
+.our-story {
+  &__container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    &-info {
+      span {
+        font-size: 36px;
+        font-family: "Poppins";
+        font-weight: 800;
+        position: relative;
+        display: block;
+        margin-bottom: 45px;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -18px;
+          width: 72px;
+          height: 8px;
+          border-radius: 2px;
+          background-color: $theme-primary;
+        }
+      }
+      p {
+        font-size: 18px;
+        font-family: "Poppins";
+        font-weight: 300;
+        color: $theme-secondary;
+      }
+    }
+  }
+}

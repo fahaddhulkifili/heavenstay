@@ -2,12 +2,12 @@ import React from "react";
 import HeavenStayLogo from "../../resources/icons/HeavenStayLogo";
 import * as styles from "./Navigation.module.scss";
 import Container from "../UI/Container/Container";
+import Button from "../UI/Button/Button";
 
 const Navigation = ({ activeSection, sections }) => {
   const activeStyle = {
     fontWeight: "bold",
-    color: "red",
-    textDecoration: "underline",
+    color: "#4369B2",
   };
 
   return (
@@ -33,6 +33,10 @@ const Navigation = ({ activeSection, sections }) => {
               </li>
             ))}
           </ul>
+          <div className={styles.headerBtnContainer}>
+            <Button type={"primary"}>Enquiry</Button>
+            <Button type={"secondary"}>Book Now</Button>
+          </div>
         </nav>
       </Container>
     </div>

@@ -1,4 +1,3 @@
-// Menu.js
 import React, { useState, useEffect, useRef } from "react";
 import Navigation from "../components/Navigation/Navigation";
 import Section from "../components/Sections/Sections";
@@ -6,6 +5,8 @@ import HeroBanner from "../components/HeroSection/HeroBanner";
 import About from "../components/AboutSection/About";
 import Testimonial from "../components/TestimonialSection/Testimonial";
 import Booking from "../components/BookingSection/Booking";
+import Footer from "../components/Footer/Footer";
+import "../styles/index.scss";
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState("section1");
@@ -62,6 +63,7 @@ const HomePage = () => {
           </Section>
         ))}
       </div>
+      <Footer />
     </>
   );
 };
