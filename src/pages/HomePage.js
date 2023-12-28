@@ -11,7 +11,7 @@ import "../styles/index.scss";
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState("section1");
   const sections = useRef([
-    { id: "hero", label: "hero", sectionContent: <HeroBanner /> },
+    { id: "home", label: "home", sectionContent: <HeroBanner /> },
     { id: "about", label: "about", sectionContent: <About /> },
     {
       id: "testimonial",
@@ -56,7 +56,7 @@ const HomePage = () => {
   return (
     <>
       <Navigation activeSection={activeSection} sections={sections.current} />
-      <div style={{ marginTop: "40px" }}>
+      <div className="homeSectionContainer">
         {sections.current.map((section) => (
           <Section key={section.id} id={section.id}>
             {section.sectionContent}

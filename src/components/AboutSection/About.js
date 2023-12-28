@@ -59,7 +59,7 @@ const About = () => {
         <Container>
           <div className="our-story__container">
             <div className="our-story__container-image">
-              <p>img</p>
+              <p>BINIL please provide image</p>
             </div>
             <div className="our-story__container-info">
               <span>Our Story</span>

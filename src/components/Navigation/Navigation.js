@@ -6,7 +6,6 @@ import Button from "../UI/Button/Button";
 
 const Navigation = ({ activeSection, sections }) => {
   const activeStyle = {
-    fontWeight: "bold",
     color: "#4369B2",
   };
 
@@ -14,7 +13,7 @@ const Navigation = ({ activeSection, sections }) => {
     <div className={styles.headerWrapper}>
       <Container>
         <nav className={styles.navWrapper}>
-          <a href="#hero" className={styles.logoWrapper}>
+          <a href="#home" className={styles.logoWrapper}>
             <HeavenStayLogo />
           </a>
           <ul className={styles.navList}>
@@ -22,7 +21,6 @@ const Navigation = ({ activeSection, sections }) => {
               <li
                 key={section.id}
                 className={activeSection === section.id ? "active" : ""}
-                style={{ margin: "0 10px" }}
               >
                 <a
                   href={`#${section.id}`}

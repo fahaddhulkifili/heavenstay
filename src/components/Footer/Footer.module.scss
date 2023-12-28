@@ -14,8 +14,6 @@
       height: 50px;
     }
   }
-  &__left {
-  }
   &__right {
     span {
       font-size: 24px;
@@ -40,6 +38,7 @@
           left: 0;
           top: 0;
           background-repeat: no-repeat;
+          background-size: contain;
           width: 25px;
           height: 25px;
         }
@@ -74,6 +73,8 @@
     position: relative;
     img {
       border-radius: 25px;
+      width: 100%;
+      height: 100%;
     }
     &_btn {
       position: absolute;
@@ -127,10 +128,98 @@
           color: $theme-secondary;
           font-size: 16px;
           font-family: "Poppins";
+          &:hover {
+            color: $theme-primary;
+          }
         }
         &:not(:last-of-type) {
           margin-bottom: 24px;
         }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    padding: 40px 0px;
+    &__logo {
+      svg {
+        width: 120px;
+        height: 40px;
+      }
+    }
+    &__links {
+      ul {
+        padding-left: 0;
+        li {
+          a {
+            font-size: 14px;
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    &__social_links {
+      span {
+        font-size: 18px;
+      }
+      ul {
+        padding-left: 0;
+        li {
+          a {
+            font-size: 14px;
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    &__center {
+      span {
+        font-size: 16px;
+        margin-bottom: 18px !important;
+      }
+    }
+    &__right {
+      span {
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          padding-left: 30px !important;
+          &::after {
+            width: 20px;
+            height: 20px;
+          }
+          &:not(:last-of-type) {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    &__map {
+      img {
+        min-height: 180px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    padding: 30px 0px;
+    &__container {
+      gap: 20px;
+    }
+  }
+  @media (max-width: 650px) {
+    margin: 0px 20px;
+    &__container {
+      grid-template-columns: 1fr;
+    }
+    &__map {
+      img {
+        min-height: 110px;
       }
     }
   }
