@@ -3,9 +3,9 @@ import HomePage from "./homePage";
 
 const IndexPage = () => {
   return (
-    <main>
+    <>
       <HomePage />
-    </main>
+    </>
   );
 };
 

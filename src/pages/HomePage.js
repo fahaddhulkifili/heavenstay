@@ -1,4 +1,3 @@
-// Menu.js
 import React, { useState, useEffect, useRef } from "react";
 import Navigation from "../components/Navigation/Navigation";
 import Section from "../components/Sections/Sections";
@@ -6,11 +5,13 @@ import HeroBanner from "../components/HeroSection/HeroBanner";
 import About from "../components/AboutSection/About";
 import Testimonial from "../components/TestimonialSection/Testimonial";
 import Booking from "../components/BookingSection/Booking";
+import Footer from "../components/Footer/Footer";
+import "../styles/index.scss";
 
 const HomePage = () => {
   const [activeSection, setActiveSection] = useState("section1");
   const sections = useRef([
-    { id: "hero", label: "hero", sectionContent: <HeroBanner /> },
+    { id: "home", label: "home", sectionContent: <HeroBanner /> },
     { id: "about", label: "about", sectionContent: <About /> },
     {
       id: "testimonial",
@@ -55,13 +56,14 @@ const HomePage = () => {
   return (
     <>
       <Navigation activeSection={activeSection} sections={sections.current} />
-      <div style={{ marginTop: "40px" }}>
+      <div className="homeSectionContainer">
         {sections.current.map((section) => (
           <Section key={section.id} id={section.id}>
             {section.sectionContent}
           </Section>
         ))}
       </div>
+      <Footer />
     </>
   );
 };

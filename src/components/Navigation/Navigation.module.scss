@@ -1,13 +1,20 @@
+@import "../../styles/colors";
 .headerWrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $white-color;
+  z-index: 100;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 15px 0px #00000024;
   .navWrapper {
-    position: sticky;
-    top: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .logoWrapper {
       display: flex;
       svg {
-        width: 120px;
+        width: 180px;
         height: 50px;
       }
     }
@@ -17,13 +24,70 @@
       margin: 0;
       padding: 0;
       a {
+        color: $theme-secondary;
         text-decoration: none;
         text-transform: capitalize;
+        font-family: "Poppins";
+        font-size: 18px;
+      }
+      li {
+        &:not(:last-of-type) {
+          margin-right: 40px;
+        }
       }
     }
   }
-}
+  .headerBtnContainer {
+    display: flex;
+    a {
+      &:first-of-type {
+        margin-right: 15px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .navList {
+      a {
+        color: $theme-secondary;
+        font-size: 14px !important;
+      }
+    }
+    .logoWrapper {
+      svg {
+        width: 150px !important;
+        height: 40px !important;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .navList {
+      li {
+        &:not(:last-of-type) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 820px) {
+    .navList {
+      display: none !important;
+    }
+  }
+  @media (max-width: 650px) {
+    padding-inline: 20px;
 
-.active {
-  color: red;
+    .logoWrapper {
+      svg {
+        width: 95px !important;
+        height: 30px !important;
+      }
+    }
+    .headerBtnContainer {
+      a {
+        &:first-of-type {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }

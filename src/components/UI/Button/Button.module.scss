@@ -1,0 +1,49 @@
+@import "../../../styles/colors";
+.btnWrapper {
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 170px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Poppins";
+  transition: all 0.2s ease-in-out;
+  @media (max-width: 1400px) {
+    width: 150px;
+    height: 50px;
+  }
+  @media (max-width: 992px) {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+  @media (max-width: 650px) {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+.secondaryBtn {
+  background-color: $white-color;
+  color: $theme-primary;
+  border-color: $theme-primary;
+  &:hover {
+    background-color: $theme-primary;
+    color: $white-color;
+    border-color: $white-color;
+  }
+}
+.primaryBtn {
+  background-color: $theme-primary;
+  color: $white-color;
+
+  &:hover {
+    background-color: $white-color;
+    color: $theme-primary;
+    border-color: $theme-primary;
+  }
+}
