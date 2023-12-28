@@ -91,9 +91,10 @@
           }
         }
         p {
+          font-size: 16px;
           margin-left: 10px;
           font-family: "Poppins";
-          font-weight: 400;
+          font-weight: 500;
           color: $theme-secondary;
         }
       }
@@ -101,6 +102,8 @@
     &-info {
       p {
         font-size: 14px;
+        font-weight: 400;
+        color: #313131;
         font-family: "Poppins";
         white-space: pre-line;
         height: 168px;
@@ -147,6 +150,89 @@
   .slick-list {
     padding-top: 120px;
   }
+  @media (max-width: 1400px) {
+    &__content {
+      &-text {
+        span {
+          font-size: 38px;
+          line-height: 49px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    &__head {
+      span {
+        font-size: 28px;
+        &::after {
+          width: 60px;
+          height: 6px;
+        }
+      }
+    }
+    &-card {
+      &-inner {
+        padding: 25px;
+      }
+    }
+    &__content {
+      &-text {
+        span {
+          font-size: 32px;
+          line-height: 49px;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    margin-top: 60px;
+    &__head {
+      span {
+        font-size: 22px;
+      }
+    }
+    &-card {
+      &-user {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .avatar {
+          p {
+            font-size: 14px;
+          }
+          span {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    margin-top: 30px;
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 0px 20px;
+    }
+    &__content {
+      &-text {
+        display: none;
+      }
+    }
+    .slick-list {
+      padding-top: 30px;
+    }
+    &__head {
+      span {
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+    }
+    .testimonial-card-info p {
+      font-size: 12px;
+    }
+  }
 }
 
 .nextArrow {
@@ -160,6 +246,12 @@
     box-shadow: 0 0 20px #f5f9fe;
     transform: scale(1.1) translateY(-10px);
   }
+  @media (max-width: 576px) {
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
 }
 .prevArrow {
   position: absolute;
@@ -172,6 +264,13 @@
     background-color: #f5f9fe;
     box-shadow: 0 0 20px #f5f9fe;
     transform: scale(1.1) translateY(-10px);
+  }
+  @media (max-width: 576px) {
+    right: 35px;
+    svg {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
 .slick-list {

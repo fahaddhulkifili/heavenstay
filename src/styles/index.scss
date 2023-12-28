@@ -7,3 +7,9 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+.homeSectionContainer {
+  margin-top: 40px;
+  @media (max-width: 650px) {
+    margin-top: 0px;
+  }
+}

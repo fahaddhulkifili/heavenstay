@@ -9,9 +9,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Poppins";
   transition: all 0.2s ease-in-out;
+  @media (max-width: 1400px) {
+    width: 150px;
+    height: 50px;
+  }
+  @media (max-width: 992px) {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+  }
+  @media (max-width: 650px) {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
 }
 .secondaryBtn {
   background-color: $white-color;

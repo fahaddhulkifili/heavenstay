@@ -10,24 +10,24 @@ const Footer = () => {
     <section className={styles.footer}>
       <Container>
         <div className={styles.footer__container}>
-          <div className={styles.footer__left}>
-            <a href="#hero" className={styles.footer__logo}>
+          <div>
+            <a href="#home" className={styles.footer__logo}>
               <HeavenStayLogo />
             </a>
             <div className={styles.footer__navs}>
               <div className={styles.footer__links}>
                 <ul>
                   <li>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                   </li>
                   <li>
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                   </li>
                   <li>
-                    <a href="">Testimonial</a>
+                    <a href="#testimonial">Testimonial</a>
                   </li>
                   <li>
-                    <a href="">Booking</a>
+                    <a href="#booking">Booking</a>
                   </li>
                 </ul>
               </div>
@@ -35,13 +35,19 @@ const Footer = () => {
                 <span>Find us on</span>
                 <ul>
                   <li className="facebook">
-                    <a href="#">Facebook</a>
+                    <a href="#" target="_blank">
+                      Facebook
+                    </a>
                   </li>
                   <li className="instagram">
-                    <a href="#">Instagram</a>
+                    <a href="#" target="_blank">
+                      Instagram
+                    </a>
                   </li>
                   <li className="youtube">
-                    <a href="#">Youtube</a>
+                    <a href="#" target="_blank">
+                      Youtube
+                    </a>
                   </li>
                 </ul>
               </div>

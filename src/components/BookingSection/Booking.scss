@@ -43,4 +43,37 @@
     z-index: -1;
     mix-blend-mode: color-burn;
   }
+  @media (max-width: 1200px) {
+    &-inner {
+      padding: 33px 0px;
+      p {
+        font-size: 34px;
+        margin-bottom: 33px !important;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    &-inner {
+      padding: 43px 0px;
+      p {
+        font-size: 30px;
+        margin-bottom: 30px !important;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    border-radius: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &-inner {
+      padding: 23px 0px;
+      p {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px !important;
+      }
+    }
+  }
 }
