@@ -7,6 +7,7 @@ import Wifi from "../../resources/svg/Wifi";
 import Parking from "../../resources/svg/Parking";
 import Petfriendly from "../../resources/svg/Petfriendly";
 import Outdoor from "../../resources/svg/Outdoor";
+import { StaticImage } from "gatsby-plugin-image";
 
 const About = () => {
   return (
@@ -59,7 +60,11 @@ const About = () => {
         <Container>
           <div className="our-story__container">
             <div className="our-story__container-image">
-              <p>BINIL please provide image</p>
+              <StaticImage
+                src="../../images/blob.png"
+                alt="bedroom-first"
+                className="bedroom-first"
+              />
             </div>
             <div className="our-story__container-info">
               <span>Our Story</span>
@@ -81,6 +86,81 @@ const About = () => {
                 craftsmanship. Each room is a testament to the vibrant colors,
                 textures, and artistry that define the region.
               </p>
+            </div>
+          </div>
+        </Container>
+      </section>
+      <section className="gallery">
+        <Container>
+          <div className="gallery__container-head">
+            <span className="head">Gallery</span>
+          </div>
+          <div className="gallery__container">
+            <div className="gallery__container-text">
+              <span>Authentic captures, genuine comfort.</span>
+            </div>
+            <div className="gallery__grid">
+              <StaticImage
+                src="../../images/gallery/bedroom-first.JPG"
+                alt="bedroom-first"
+                className="bedroom-first"
+              />
+              <StaticImage
+                src="../../images/gallery/bedroom-second.JPG"
+                alt="bedroom-second-angle"
+                className="bedroom-second"
+              />
+              <StaticImage
+                src="../../images/gallery/bedroom-third.JPG"
+                alt="bedroom-third"
+                className="bedroom-third"
+              />
+
+              <StaticImage
+                src="../../images/gallery/bedroom-second-v2.JPG"
+                alt="bedroom-second"
+                className="bedroom-second"
+              />
+              <StaticImage
+                src="../../images/gallery/bedroom-third-v2.JPG"
+                alt="bedroom-third-angle"
+                className="bedroom-third"
+              />
+              <StaticImage
+                src="../../images/gallery/dining.JPG"
+                alt="dining"
+                className="dining"
+              />
+              <StaticImage
+                src="../../images/gallery/hall.JPG"
+                alt="hall"
+                className="hall"
+              />
+              <StaticImage
+                src="../../images/gallery/hall-v2.JPG"
+                alt="hall-angle"
+                className="hall"
+              />
+              <StaticImage
+                src="../../images/gallery/kitchen.JPG"
+                alt="kitchen"
+                className="kitchen"
+              />
+              <StaticImage
+                src="../../images/gallery/work-area.JPG"
+                alt="work-area"
+                className="work-area"
+              />
+              <StaticImage
+                src="../../images/gallery/front-view.JPG"
+                alt="front-view"
+                className="front-view"
+              />
+              <StaticImage
+                src="../../images/gallery/courtyard.JPG"
+                alt="courtyard"
+                className="courtyard"
+              />
             </div>
           </div>
         </Container>
