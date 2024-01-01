@@ -156,3 +156,139 @@
     }
   }
 }
+.gallery {
+  padding-top: 110px;
+  .head {
+    font-size: 36px;
+    font-family: "Poppins";
+    font-weight: 800;
+    position: relative;
+    display: block;
+    margin-bottom: 45px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -18px;
+      width: 72px;
+      height: 8px;
+      border-radius: 2px;
+      background-color: $theme-primary;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    &-text {
+      span {
+        font-family: "Playfair Display Bold";
+        padding-top: 140px;
+        font-size: 45px;
+        display: block;
+        line-height: 72px;
+        color: #313131;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        position: relative;
+        z-index: 10;
+        &::after {
+          content: "";
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          right: 20px;
+          top: 0;
+          z-index: -1;
+          width: 200px;
+          height: 200px;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMwIiBoZWlnaHQ9IjIzMCIgdmlld0JveD0iMCAwIDIzMCAyMzAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xOTEuNjU3IDM4LjMzMzRIMzguMzIzNkMyNy43NTMyIDM4LjMzMzQgMTkuMTU3IDQ2LjkyOTYgMTkuMTU3IDU3LjVWMTcyLjVDMTkuMTU3IDE4My4wNyAyNy43NTMyIDE5MS42NjcgMzguMzIzNiAxOTEuNjY3SDE5MS42NTdDMjAyLjIyNyAxOTEuNjY3IDIxMC44MjQgMTgzLjA3IDIxMC44MjQgMTcyLjVWNTcuNUMyMTAuODI0IDQ2LjkyOTYgMjAyLjIyNyAzOC4zMzM0IDE5MS42NTcgMzguMzMzNFpNNjIuMjgyIDY3LjA4MzRDNjYuMDk0NSA2Ny4wODM0IDY5Ljc1MDggNjguNTk3OSA3Mi40NDY2IDcxLjI5MzdDNzUuMTQyNSA3My45ODk2IDc2LjY1NyA3Ny42NDU5IDc2LjY1NyA4MS40NTg0Qzc2LjY1NyA4NS4yNzA5IDc1LjE0MjUgODguOTI3MiA3Mi40NDY2IDkxLjYyM0M2OS43NTA4IDk0LjMxODkgNjYuMDk0NSA5NS44MzM0IDYyLjI4MiA5NS44MzM0QzU4LjQ2OTUgOTUuODMzNCA1NC44MTMyIDk0LjMxODkgNTIuMTE3MyA5MS42MjNDNDkuNDIxNSA4OC45MjcyIDQ3LjkwNyA4NS4yNzA5IDQ3LjkwNyA4MS40NTg0QzQ3LjkwNyA3Ny42NDU5IDQ5LjQyMTUgNzMuOTg5NiA1Mi4xMTczIDcxLjI5MzdDNTQuODEzMiA2OC41OTc5IDU4LjQ2OTUgNjcuMDgzNCA2Mi4yODIgNjcuMDgzNFpNMTE0Ljk5IDE2Mi45MTdINDcuOTA3TDg2LjI0MDMgMTE1TDEwMC42MTUgMTM0LjE2N0wxMjkuMzY1IDk1LjgzMzRMMTgyLjA3NCAxNjIuOTE3SDExNC45OVoiIGZpbGw9IiNGNUY5RkUiLz4KPC9zdmc+Cg==);
+        }
+      }
+    }
+    &-head {
+      display: grid;
+      grid-template-columns: 0.6fr 1fr;
+      span.head {
+        grid-column: 2 / span 1;
+      }
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    .gatsby-image-wrapper {
+      cursor: pointer;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        top: 100%;
+        background-color: rgba($theme-primary, 1);
+        transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+        font-size: 18px;
+        color: $white-color;
+        text-transform: capitalize;
+        font-family: "Poppins";
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+      }
+      &:hover {
+        &::after {
+          top: 0;
+        }
+      }
+    }
+    .bedroom-first {
+      &::after {
+        content: "Bedroom 1";
+      }
+    }
+    .bedroom-second {
+      &::after {
+        content: "Bedroom 2";
+      }
+    }
+    .bedroom-third {
+      &::after {
+        content: "Bedroom 3";
+      }
+    }
+    .dining {
+      &::after {
+        content: "Dining";
+      }
+    }
+    .hall {
+      &::after {
+        content: "Hall";
+      }
+    }
+    .kitchen {
+      &::after {
+        content: "Kitchen";
+      }
+    }
+    .work-area {
+      &::after {
+        content: "Work Area";
+      }
+    }
+    .front-view {
+      &::after {
+        content: "Front-view";
+      }
+    }
+    .courtyard {
+      &::after {
+        content: "Courtyard";
+      }
+    }
+  }
+}
