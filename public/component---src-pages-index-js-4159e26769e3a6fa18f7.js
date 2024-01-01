@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkheavenstay=self.webpackChunkheavenstay||[]).push([[678],{6558:function(e,t,n){n.r(t),n.d(t,{Head:function(){return u}});var a=n(7294),l=n(8801);const u=()=>a.createElement("title",null,"Heave Stay");t.default=()=>a.createElement(a.Fragment,null,a.createElement(l.default,null))}}]);
+//# sourceMappingURL=component---src-pages-index-js-4159e26769e3a6fa18f7.js.map
