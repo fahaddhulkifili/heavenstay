@@ -1,14 +1,10 @@
 import React from "react";
-import HomePage from "./homePage";
+import HomePage from "./HomePage.js";
 
 const IndexPage = () => {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+  return <HomePage />;
 };
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Heaven Stay</title>;
 
 export default IndexPage;
