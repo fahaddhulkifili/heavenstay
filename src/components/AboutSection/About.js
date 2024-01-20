@@ -152,12 +152,12 @@ const About = () => {
                 className="work-area"
               />
               <StaticImage
-                src="../../images/gallery/front-view.JPG"
+                src="../../images/gallery/front-view.jpg"
                 alt="front-view"
                 className="front-view"
               />
               <StaticImage
-                src="../../images/gallery/courtyard.JPG"
+                src="../../images/gallery/courtyard.jpg"
                 alt="courtyard"
                 className="courtyard"
               />
