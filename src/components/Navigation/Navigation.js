@@ -32,8 +32,22 @@ const Navigation = ({ activeSection, sections }) => {
             ))}
           </ul>
           <div className={styles.headerBtnContainer}>
-            <Button type={"primary"}>Enquiry</Button>
-            <Button type={"secondary"}>Book Now</Button>
+            <Button
+              href={"tel:+919539583864"}
+              target={"_self"}
+              type={"primary"}
+            >
+              Enquiry
+            </Button>
+            <Button
+              href={
+                "https://www.booking.com/hotel/in/heaven-stay-varkala.en-gb.html#availability"
+              }
+              target={"_blank"}
+              type={"secondary"}
+            >
+              Book Now
+            </Button>
           </div>
         </nav>
       </Container>
