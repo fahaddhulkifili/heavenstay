@@ -58,7 +58,13 @@ const Footer = () => {
             <div className={styles.footer__map}>
               <img src={mapImg} alt="map-image" />
               <div className={styles.footer__map_btn}>
-                <Button type={"secondary"}>Open in map</Button>
+                <Button
+                  href={"https://maps.app.goo.gl/kVkDUuwRkqmLmMrBA"}
+                  type={"secondary"}
+                  target={"_blank"}
+                >
+                  Open in map
+                </Button>
               </div>
             </div>
           </div>
@@ -69,7 +75,9 @@ const Footer = () => {
                 House No. 30, Heaven Stay, 109 Janardhanapuram, Mundayil Beach
                 Rd, near Kumili Temple, Varkala, Kerala 695141, India
               </li>
-              <li className={styles.contact}>+91 99954 42236</li>
+              <li className={styles.contact}>
+                <a href="tel:+919539583864">+91 99954 42236</a>
+              </li>
               <li className={styles.mail}>info@heavenstay.com</li>
             </ul>
           </div>

@@ -8,7 +8,11 @@ const Button = (props) => {
   } else if (props.type === "primary") {
     buttonClass += ` ${styles.primaryBtn}`;
   }
-  return <a className={buttonClass}>{props.children}</a>;
+  return (
+    <a href={props.href} target={props.target} className={buttonClass}>
+      {props.children}
+    </a>
+  );
 };
 
 export default Button;
