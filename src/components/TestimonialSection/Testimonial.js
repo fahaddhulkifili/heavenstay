@@ -21,6 +21,10 @@ const testimonialData = [
       "A staycation at Heaven Stay was just what I needed after a stressful week. As the name suggests, a literal heaven at Varkala. ❤️",
   },
   {
+    name: "Sarath",
+    testimonailtext: `My stay at Heaven Stay was fantastic! Mr. Binil Baby, the host, was very welcoming and made sure that I had everything I needed during my stay. The space was clean, comfortable, and well-decorated. It had all the amenities that I needed and was in a great location. I would highly recommend Heaven Stay and Mr. Binil Baby as a host to anyone looking for a comfortable and convenient place to stay.`,
+  },
+  {
     name: "Vyshak Namboothiri",
     testimonailtext: `Best place for a staycation ❤️ Amazing memories, friendly staff and neat rooms. I really enjoyed the stay and glad i took the rooms here.\n Highly recommended! 💯`,
   },
@@ -38,6 +42,11 @@ const testimonialData = [
     name: "Rahul Joseph",
     testimonailtext:
       "One of the best stays we had in our costal ride. Loved the place and the hospitality. Would give more stars if I could. So well maintained. Clean place.",
+  },
+  {
+    name: "vinay reddy",
+    testimonailtext:
+      "We had an amazing stay. All the facilities were included and has nice parking space. Felt like home. Thank you for hosting us!",
   },
 ];
 
