@@ -16,6 +16,11 @@ const testimonialData = [
       "Had an amazing experience with them. The host Mr Binil was very proffesional and made the checkins and thepayments easy and smooth, also the manager of the property Mr Renju was very friendly and helped us a lot. Totally had so much fun and great stay over there",
   },
   {
+    name: "Sana",
+    testimonailtext:
+      "A staycation at Heaven Stay was just what I needed after a stressful week. As the name suggests, a literal heaven at Varkala. ❤️",
+  },
+  {
     name: "Vyshak Namboothiri",
     testimonailtext: `Best place for a staycation ❤️ Amazing memories, friendly staff and neat rooms. I really enjoyed the stay and glad i took the rooms here.\n Highly recommended! 💯`,
   },
@@ -25,7 +30,7 @@ const testimonialData = [
       "Very elegant and peaceful home at varkala. If you are looking a for a calm and chill place close varakala beach and papanasam this is a really good place. \n It has all the benefits of a proper house like kitchen and living area, air conditioning etc. \n The care take Renju is a very good person. Owner Binil is also a very good person, he was very flexible",
   },
   {
-    name: "akhil raj",
+    name: "Akhil Raj",
     testimonailtext:
       "One of the best stays, both the host and caretaker was so helpful, i really recommend this to all",
   },
@@ -33,11 +38,6 @@ const testimonialData = [
     name: "Rahul Joseph",
     testimonailtext:
       "One of the best stays we had in our costal ride. Loved the place and the hospitality. Would give more stars if I could. So well maintained. Clean place.",
-  },
-  {
-    name: "Rahul Joseph",
-    testimonailtext:
-      "Had a memorable stay with friends and family. Staff and management were so friendly. Facilities top notch. \n The location and surrounding - nothing like it. Just few kilometers from beach! Must visit if in town. If we are planing to visit varkala we will definitely choose HEAVEN STAY.",
   },
 ];
 
@@ -119,7 +119,9 @@ const Testimonial = () => {
                       <div className="testimonial-card-user">
                         <div className="testimonial-card-user-details">
                           <div className="avatar">
-                            <span>{data.name.charAt(0)}</span>
+                            <span>
+                              {data.name.charAt(0).toLocaleUpperCase()}
+                            </span>
                             <p>{data.name}</p>
                           </div>
                           <div className="testimonial-card-info">
