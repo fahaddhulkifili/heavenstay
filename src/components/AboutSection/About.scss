@@ -160,16 +160,7 @@
         align-items: center;
         width: 100%;
         img {
-          width: 50%;
-        }
-      }
-    }
-  }
-  @media (max-width: 576px) {
-    &__container {
-      &-image {
-        img {
-          width: 30%;
+          width: 50% !important;
         }
       }
     }
