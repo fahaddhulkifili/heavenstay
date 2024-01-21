@@ -1,5 +1,5 @@
 import React from "react";
-import coverImg from "../../images/heroCoverImage.jpg";
+import coverImg from "../../images/heroCoverImage5.jpg";
 import Container from "../UI/Container/Container";
 import "./HeroBanner.scss";
 

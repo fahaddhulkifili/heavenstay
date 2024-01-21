@@ -165,6 +165,15 @@
       }
     }
   }
+  @media (max-width: 576px) {
+    &__container {
+      &-image {
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
 }
 .gallery {
   padding-top: 110px;

@@ -77,7 +77,9 @@ const Footer = () => {
                   Rd, near Kumili Temple, Varkala, Kerala 695141, India
                 </li>
                 <li className={styles.contact}>
-                  <a href="tel:+919539583864">+91 99954 42236</a>
+                  <a href="tel:+919995442236">+91 99954 42236</a>
+                  <br />
+                  <a href="tel:+919539583864">+91 95395 83864</a>
                 </li>
                 <li className={styles.mail}>info@heavenstay.com</li>
               </ul>
