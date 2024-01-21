@@ -229,4 +229,14 @@
       }
     }
   }
+  &__copyright {
+    background-color: $theme-primary;
+    text-align: center;
+    padding: 5px 0px;
+    span {
+      font-family: "Poppins";
+      font-size: 12px;
+      color: $white-color;
+    }
+  }
 }
